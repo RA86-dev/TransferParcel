@@ -25,13 +25,18 @@ To use PythonParcel, follow these steps:
 2. Run the `run` method to fetch, scan, and execute the script.
 3. Find a URL from the web. Recommended to first test it with the local script we have along with others.
 
+## Create a CDN for it:
+you need to do it like this:
+['EXTENSION','CODE']
+The reason is so that it will find a Extension.
+
 
 
 
 Example:
 
 ```python
-from PythonParcel import SD
+from TransferParcel import SD
 
 url = "https://example.com/myscript.py"
 output_filename = "myscript"
