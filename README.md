@@ -30,7 +30,7 @@ To use TransferParcel, follow these steps:
 You need to provide the Python script content in the following format:
 ['EXTENSION', 'CODE']
 
-kotlin
+
 Copy code
 The reason for this format is to specify the file extension for proper handling.
 
