@@ -19,19 +19,20 @@ TransferParcel consists of two main components:
 
 ## Usage
 
-To use PythonParcel, follow these steps:
+To use TransferParcel, follow these steps:
 
 1. Initialize an instance of the `SD` class with the URL of the Python script and the desired output filename.
 2. Run the `run` method to fetch, scan, and execute the script.
 3. Find a URL from the web. Recommended to first test it with the local script we have along with others.
 
-## Create a CDN for it:
-you need to do it like this:
-['EXTENSION','CODE']
-The reason is so that it will find a Extension.
+## Create a CDN for it
 
+You need to provide the Python script content in the following format:
+['EXTENSION', 'CODE']
 
-
+kotlin
+Copy code
+The reason for this format is to specify the file extension for proper handling.
 
 Example:
 
@@ -43,3 +44,6 @@ output_filename = "myscript"
 
 parcel = SD(url, output_filename)
 parcel.run()
+```
+Replace "https://example.com/myscript.py" with the URL of the Python script you want to fetch, and "myscript" with the desired output filename.
+
